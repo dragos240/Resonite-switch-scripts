@@ -19,6 +19,8 @@ These scripts are intended to make switching between the current release (pre-sp
 
 **launch-resonite.sh**: This script accepts on of two arguments, either "stable" (for the release branch) or "pre" for the pre-release branch. If no argument is given or an invalid argument is provided, the script will exit and tell the user to run it again with either "stable" or "pre". Depending on the argument given, it will either delete the symbolic link and create a new link to the "pre-release" directory or delete the symbolic link and create a new link to the "stable" directory.
 
+**switch-version.sh**: This script does the exact same thing as the other, except that it does not launch the game. This can be useful if you've noticed there's an update pending but you're still on stable. In this case, you can run `switch-version.sh pre`.
+
 ## Instructions
 1. Open steam and ensure you have "automatic updates" turned to "wait until I launch the game". This is **VERY important** as it gives the launcher the chance to switch the release type before it updates and thus prevents the release files getting overwritten by the pre-release ones
 2. Clone the repository into your Steam's "common" folder or download the zip and extract Resonite-switch-scripts-master to the "common" folder. The common folder is usually at `~/.local/share/Steam/steamapps/common` or wherever you installed Resonite to. Just make sure it's in the same "common" folder as your Resonite install, which will be referred to as `COMMON` for the rest of the instructions

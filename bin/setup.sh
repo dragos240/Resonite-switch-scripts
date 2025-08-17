@@ -1,6 +1,5 @@
 #!/bin/sh
-# Set -e while testing to make sure crashes exit the script
-# set -e
+set -e
 
 script_dir="$(dirname $0)"
 reso_dir="${script_dir}/../../Resonite"
